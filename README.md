@@ -1,6 +1,6 @@
 # Lanchester V1
 
-## Generative AI Tactical Simulation MVP
+Generative AI Tactical Simulation MVP
 
 ## Overview
 
