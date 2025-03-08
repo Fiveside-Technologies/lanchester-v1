@@ -77,17 +77,7 @@ project_root/
 
 ### Installing Dependencies
 
-Create a `requirements.txt` file with the following content:
-
-```
-openai
-fastapi
-uvicorn
-rich
-matplotlib
-```
-
-Then install the dependencies:
+To install the dependencies:
 
 ```bash
 pip install -r requirements.txt
