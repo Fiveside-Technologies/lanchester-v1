@@ -68,12 +68,7 @@ project_root/
 ### Requirements
 
 -   **Python 3.8+**
--   Required Python packages (can be installed via `pip`):
-    -   `openai`
-    -   `fastapi`
-    -   `uvicorn`
-    -   `rich`
-    -   `matplotlib`
+-   Required Python packages
 
 ### Installing Dependencies
 

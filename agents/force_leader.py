@@ -97,12 +97,11 @@ class ForceLeader:
             client = openai.OpenAI()  # Using our simple OpenAI client interface
             completion = client.chat.completions.create(
                 model="gpt-4o",
-                store=True,
                 messages=[
                     {"role": "user", "content": prompt}
                 ]
             )
-            summary = completion.choices[0].message.get("content", "No decision generated.")
+            summary = completion.choices[0].message.content
         except Exception as e:
             summary = f"Error generating decision summary: {str(e)}"
         return f"{self.team_color} Leader Decision: {summary}"

@@ -68,12 +68,11 @@ class SubAgent:
             client = openai.OpenAI()
             completion = client.chat.completions.create(
                 model="gpt-4o",
-                store=True,
                 messages=[
                     {"role": "user", "content": prompt}
                 ]
             )
-            decision = completion.choices[0].message.get("content", "No decision generated.")
+            decision = completion.choices[0].message.content
         except Exception as e:
             decision = f"Error generating decision: {str(e)}"
         
